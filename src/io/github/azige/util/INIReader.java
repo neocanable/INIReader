@@ -54,7 +54,8 @@ public class INIReader {
                     sb = new StringBuilder();
                 }
                 sf = kf = vf = false;
-                reader.readLine();
+                // lost data if BufferReader skip line
+                // reader.readLine();
                 linect++;
             }
             else if (c == '['){
